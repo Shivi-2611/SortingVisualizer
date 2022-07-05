@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1>SORTING VISUALIZER</h1>
+        </div>
+        <nav>
+            <div id="nav-bar">
+                <button class="bubble sort-button">Bubble Sort</button>
+                <button class="selection sort-button">Selection Sort</button>
+                <button class="insertion sort-button">Insertion Sort</button>
+                <button class="merge sort-button">Merge Sort</button>
+                <button class="quick sort-button">Quick Sort</button>
+            </div>
+        </nav>
+        <div class="sorting-heading">
+             <h1 class="sorting-title">Choose Your Sorting Algorithm!!</h1>
+        </div>
+        <div class="generate-arr">
+            <button class="generate-button">Generate New Array</button>
+        </div>
+
+        <div id="controls">
+            <div class="control-option">
+                <p>Array Size</p>
+                <div class="slider-container">
+                    <div class="show-val">
+                        <span class="current-val"><p>100</p></span>
+                    </div>
+                    <input id="arr-size" class="slider" type="range" min=20 max=100 step=1 value="20">
+                    <div class="range">
+                        <div>20</div>
+                        <div>100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="control-option">
+                <p>Algorithm Speed</p>
+                <div class="slider-container">
+                    <div class="show-val">
+                        <span class="current-val"><p>5</p></span>
+                    </div>
+                    <input id="algo-speed" class="slider" type="range" min=1 max=5 step=1 value="4">
+                    <div class="range">
+                        <div>1</div>
+                        <div>5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="main-container">
+            <div class="vizualizer-conatiner">
+                <div id="vizualizer">
+                
+                </div>
+                <div class="complexity-container">
+                    <div class="time-complexity complexity">
+                        <h3>TIME COMPLEXITY</h3>
+                        <div class="case">
+                            <h6>Best Case :</h6>
+                            <p class="best-time"></p>
+                        </div>
+                        <div class="case">
+                            <h6>Average Case :</h6>
+                            <p class="average-time"></p>
+                        </div>
+                        <div class="case">
+                            <h6>Worst Case :</h6>
+                            <p class="worst-time"></p>
+                        </div>
+                    </div>
+                    <div class="space-complexity complexity">
+                        <h3>SPACE COMPLEXITY</h3>
+                        <div class="case">
+                            <h6>Worst Case :</h6>
+                            <p class="worst-space"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+<script src="./scripts/slider.js"></script>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/bubble.js"></script>
+<script src="./scripts/selection.js"></script>
+<script src="./scripts/insertion.js"></script>
+<script src="./scripts/merge.js"></script>
+<script src="./scripts/quick.js"></script>
+</html>
+<!--//#0D1117-->
